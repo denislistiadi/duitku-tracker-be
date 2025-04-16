@@ -1,4 +1,4 @@
 npm run test:run
 npm run type-check
 npm run lint
-npm run format
+npm run format:check
