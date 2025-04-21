@@ -1,6 +1,9 @@
 import compression from "compression";
+import cors from "cors";
 import express from "express";
 import helmet from "helmet";
+
+import routes from "./routes/index.js";
 
 const app = express();
 
@@ -15,5 +18,11 @@ app.use(express.urlencoded({ extended: true }));
 
 // compress responses
 app.use(compression());
+
+// cors
+app.use(cors());
+
+// routes
+app.use("/api", routes);
 
 export default app;

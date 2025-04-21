@@ -10,6 +10,9 @@ importers:
       "@prisma/client":
         specifier: ^6.6.0
         version: 6.6.0(prisma@6.6.0(typescript@5.8.3))(typescript@5.8.3)
+      bcrypt-ts:
+        specifier: ^6.0.0
+        version: 6.0.0
       compression:
         specifier: ^1.8.0
         version: 1.8.0
@@ -25,6 +28,9 @@ importers:
       http-status:
         specifier: ^2.1.0
         version: 2.1.0
+      joi:
+        specifier: ^17.13.3
+        version: 17.13.3
       prisma:
         specifier: ^6.6.0
         version: 6.6.0(typescript@5.8.3)
@@ -41,6 +47,9 @@ importers:
       "@types/compression":
         specifier: ^1.7.5
         version: 1.7.5
+      "@types/cors":
+        specifier: ^2.8.17
+        version: 2.8.17
       "@types/express":
         specifier: ^5.0.1
         version: 5.0.1
@@ -296,6 +305,12 @@ packages:
     resolution: { integrity: sha512-ZAoA40rNMPwSm+AeHpCq8STiNAwzWLJuP8Xv4CHIc9wv/PSuExjMrmjfYNj682vW0OOiZ1HKxzvjQr9XZIisQA== }
     engines: { node: ^18.18.0 || ^20.9.0 || >=21.1.0 }
 
+  "@hapi/hoek@9.3.0":
+    resolution: { integrity: sha512-/c6rf4UJlmHlC9b5BaNvzAcFv7HZ2QHaV0D4/HNlBdvFnvQq8RI4kYdhyPCl7Xj+oWvTWQ8ujhqS53LIgAe6KQ== }
+
+  "@hapi/topo@5.1.0":
+    resolution: { integrity: sha512-foQZKJig7Ob0BMAYBfcJk8d77QtOe7Wo4ox7ff1lQYoNNAb6jwcY1ncdoy2e9wQZzvNy7ODZCYJkK8kzmcAnAg== }
+
   "@humanfs/core@0.19.1":
     resolution: { integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA== }
     engines: { node: ">=18.18.0" }
@@ -488,6 +503,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  "@sideway/address@4.1.5":
+    resolution: { integrity: sha512-IqO/DUQHUkPeixNQ8n0JA6102hT9CmaljNTPmQ1u8MEhBo/R4Q8eKLN/vGZxuebwOroDB4cbpjheD4+/sKFK4Q== }
+
+  "@sideway/formula@3.0.1":
+    resolution: { integrity: sha512-/poHZJJVjx3L+zVD6g9KgHfYnb443oi7wLu/XKojDviHy6HOEOA6z1Trk5aR1dGcmPenJEgb2sK2I80LeS3MIg== }
+
+  "@sideway/pinpoint@2.0.0":
+    resolution: { integrity: sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ== }
+
   "@tsconfig/node22@22.0.1":
     resolution: { integrity: sha512-VkgOa3n6jvs1p+r3DiwBqeEwGAwEvnVCg/hIjiANl5IEcqP3G0u5m8cBJspe1t9qjZRlZ7WFgqq5bJrGdgAKMg== }
 
@@ -499,6 +523,9 @@ packages:
 
   "@types/connect@3.4.38":
     resolution: { integrity: sha512-K6uROf1LD88uDQqJCktA4yzL1YYAK6NgfsI0v/mTgyPKWsX1CnJ0XPSDhViejru1GcRkLWb8RlzFYJRqGUbaug== }
+
+  "@types/cors@2.8.17":
+    resolution: { integrity: sha512-8CGDvrBj1zgo2qE+oS3pOCyYNqCPryMWY2bGfwA0dcfopWGgxs+78df0Rs3rc9THP4JkOhLsAa+15VdpAqkcUA== }
 
   "@types/estree@1.0.7":
     resolution: { integrity: sha512-w28IoSUCJpidD/TGviZwwMJckNESJZXFu7NBZ5YJ4mEUnNraUn9Pm8HSZm/jDF1pDWYKspWE7oVphigUPRakIQ== }
@@ -671,6 +698,10 @@ packages:
 
   balanced-match@1.0.2:
     resolution: { integrity: sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw== }
+
+  bcrypt-ts@6.0.0:
+    resolution: { integrity: sha512-P6B36krzeMDEIzG2o2SiDxHCSHeWF2Fvj/Kvmr5gAMBs6jpKfU/9LPXkrd4Ztp3reeq9nNZEU3DQq/e0xZ1T9w== }
+    engines: { node: ">=18" }
 
   body-parser@2.2.0:
     resolution: { integrity: sha512-02qvAaxv8tp7fBa/mw1ga98OGm+eCbqzJOKoRt70sLmfEEi+jyBYVTDGfCL/k06/4EMk/z01gCe7HoCH/f2LTg== }
@@ -1097,6 +1128,9 @@ packages:
 
   jackspeak@3.4.3:
     resolution: { integrity: sha512-OGlZQpz2yfahA/Rd1Y8Cd9SIEsqvXkLVoSw/cgwhnhFMDbsQFeZYoJJ7bIZBS9BcamUW96asq/npPWugM+RQBw== }
+
+  joi@17.13.3:
+    resolution: { integrity: sha512-otDA4ldcIx+ZXsKHWmp0YizCweVRZG96J10b0FevjfuncLO1oX59THoAmHkNubYJ+9gWsYsp5k8v4ib6oDv1fA== }
 
   js-yaml@4.1.0:
     resolution: { integrity: sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA== }
@@ -1773,6 +1807,12 @@ snapshots:
       "@eslint/core": 0.13.0
       levn: 0.4.1
 
+  "@hapi/hoek@9.3.0": {}
+
+  "@hapi/topo@5.1.0":
+    dependencies:
+      "@hapi/hoek": 9.3.0
+
   "@humanfs/core@0.19.1": {}
 
   "@humanfs/node@0.16.6":
@@ -1922,6 +1962,14 @@ snapshots:
   "@rollup/rollup-win32-x64-msvc@4.40.0":
     optional: true
 
+  "@sideway/address@4.1.5":
+    dependencies:
+      "@hapi/hoek": 9.3.0
+
+  "@sideway/formula@3.0.1": {}
+
+  "@sideway/pinpoint@2.0.0": {}
+
   "@tsconfig/node22@22.0.1": {}
 
   "@types/body-parser@1.19.5":
@@ -1934,6 +1982,10 @@ snapshots:
       "@types/express": 5.0.1
 
   "@types/connect@3.4.38":
+    dependencies:
+      "@types/node": 22.14.1
+
+  "@types/cors@2.8.17":
     dependencies:
       "@types/node": 22.14.1
 
@@ -2153,6 +2205,8 @@ snapshots:
   assertion-error@2.0.1: {}
 
   balanced-match@1.0.2: {}
+
+  bcrypt-ts@6.0.0: {}
 
   body-parser@2.2.0:
     dependencies:
@@ -2646,6 +2700,14 @@ snapshots:
       "@isaacs/cliui": 8.0.2
     optionalDependencies:
       "@pkgjs/parseargs": 0.11.0
+
+  joi@17.13.3:
+    dependencies:
+      "@hapi/hoek": 9.3.0
+      "@hapi/topo": 5.1.0
+      "@sideway/address": 4.1.5
+      "@sideway/formula": 3.0.1
+      "@sideway/pinpoint": 2.0.0
 
   js-yaml@4.1.0:
     dependencies:

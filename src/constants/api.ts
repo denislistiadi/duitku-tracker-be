@@ -1,0 +1,7 @@
+const USER_MANAGEMENT = "/UM";
+const CATEGORY_MANAGEMENT = "/CM";
+
+export default {
+  CATEGORY_MANAGEMENT,
+  USER_MANAGEMENT,
+};
